@@ -4,7 +4,9 @@ const app = express()
  const db =require('./db');
  const bodyPaser=require('body-parser');
  app.use(bodyPaser.json());
+ require('dotenv').config();
 
+ const PORT=process.env.PORT || 3000;
 //  const Person=require('./models/person');
 
 //  const MenuItem=require('./models/MenuItem');
